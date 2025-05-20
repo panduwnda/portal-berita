@@ -1,44 +1,104 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+````markdown
+# 📰 Portal Berita - Tugas Evaluasi 3
 
-## Getting Started
+Aplikasi web portal berita yang dibangun menggunakan **Next.js**, autentikasi **OAuth2 (GitHub)** melalui **NextAuth**, dan styling dengan **Tailwind CSS**.
 
-First, run the development server:
+---
+
+## 🚀 Fitur Utama
+
+- 🔐 Login menggunakan GitHub OAuth2 (NextAuth.js)
+- 📰 Menampilkan berita dari **3 portal berita berbeda**:
+  - [GNews.io](https://gnews.io/)
+  - [Mediastack.com](https://mediastack.com/)
+  - [NewsData.io](https://newsdata.io/)
+- 🔍 Fitur pencarian berita
+- 📝 Halaman daftar & detail berita
+- 🌐 Link ke sumber berita asli
+- 🎨 Tampilan modern responsif (Tailwind CSS)
+- 🧠 Redirect otomatis jika sudah login
+- 🔒 Proteksi akses halaman login & logout
+
+---
+
+## 🛠️ Cara Install & Menjalankan
+
+1. **Clone repo ini**
+```bash
+git clone https://github.com/panduwnda/portal-berita.git
+cd portal-berita
+````
+
+2. **Install dependency**
+
+```bash
+npm install
+```
+
+3. **Buat file `.env.local`**
+
+```env
+GNEWS_API_KEY=masukkan_token_gnews
+MEDIASTACK_API_KEY=masukkan_token_mediastack
+NEWSDATA_API_KEY=masukkan_token_newsdata
+GITHUB_CLIENT_ID=masukkan_client_id_github
+GITHUB_CLIENT_SECRET=masukkan_client_secret_github
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=random_string_acak
+```
+
+4. **Jalankan aplikasi**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 💻 Tampilan Halaman
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+* 🔐 Halaman Login
+* 🏠 Halaman Utama (Daftar Berita)
+* 📄 Halaman Detail Berita
+* 🔍 Fitur Pencarian
+* 🚪 Tombol Logout + Nama User di Navbar
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📚 Teknologi yang Digunakan
 
-## Learn More
+* [Next.js](https://nextjs.org/)
+* [NextAuth.js](https://next-auth.js.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* Public APIs: GNews, Mediastack, NewsData.io
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 👨‍🎓 Pengembang
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Nama**: Pandu Putra Mulwanda
+* **NIM**: 121140176
+* **Kelas**: Pemrograman Web Lanjut
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Lisensi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
-=======
-# portal-berita
->>>>>>> f911c3bafffa76aa69b96686b9f1f987186a4612
+Repositori ini dibuat sebagai bagian dari tugas evaluasi akademik Universitas Lampung.
+
+````
+
+---
+
+### 📌 Langkah Selanjutnya
+
+1. Buka proyek kamu di VS Code  
+2. Buat atau buka file `README.md`  
+3. Tempel isi di atas  
+4. Simpan dan jalankan:
+
+```bash
+git add README.md
+git commit -m "Tambah README lengkap"
+git push
+````
