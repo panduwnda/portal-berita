@@ -1,5 +1,5 @@
 ````markdown
-# 📰 Portal Berita - Tugas Evaluasi 3
+# 📰 Portal Berita - Tugas Evaluasi 2
 
 Aplikasi web portal berita yang dibangun menggunakan **Next.js**, autentikasi **OAuth2 (GitHub)** melalui **NextAuth**, dan styling dengan **Tailwind CSS**.
 
